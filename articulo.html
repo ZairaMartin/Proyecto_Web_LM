@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Articulo</title>
+</head>
+
+<body>
+    <div class="container">
+        <header id="header">
+            <div class="arriba">
+                <div class="logo">
+                    <a href="index.html"><h1>Menú Maravilla</h1></a>
+                </div>
+                <div id="buscador">
+                    <input type="text" placeholder="Buscar..." name="buscador">
+                    <button class="lupa" type="submit" name="buscador"><img src="img/iconos/lupa.svg"
+                            alt="Lupa del buscador"></button>
+
+                </div>
+            </div>
+            <div class="navbar">
+                <nav id="navbar">
+                    <ul class="menu-fijo">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="categorias.html">Servicios</a>
+                            <ul class="menu-desplegable">
+                                <li><a href="categorias.html#boda">Bodas</a></li>
+                                <li><a href="categorias.html#bautizo">Bautizos</a></li>
+                                <li><a href="categorias.html#comuniones">Comuniones</a></li>
+                                <li><a href="categorias.html#cumpleaños">Cumpleaños</a></li>
+                                <li><a href="categorias.html#navidad">Navidad</a></li>
+                                <li><a href="categorias.html#eventos">Eventos</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="contacto.html">Contacta</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <aside id="sidebar">
+            <section class="indice-lateral">
+                <div class="ind-lat">
+                    <ul>
+                        <li><a href="index.html#welcome">Bienvenida</a></li>
+                        <li><a href="index.html#cuadricula">Catálogo de nuestros servicios</a></li>
+                        <li><a href="index.html#resumen">Nuestro trabajo</a>
+                            <ul>
+                                <li><a href="categorias.html#boda" target="_blank">Bodas</a></li>
+                                <li><a href="categorias.html#bautizo" target="_blank"> Bautizos</a></li>
+                                <li><a href="categorias.html#comuniones" target="_blank">Comuniones</a></li>
+                                <li><a href="categorias.html#cumpleaños" target="_blank">Cumpleaños</a></li>
+                                <li><a href="categorias.html#navidad" target="_blank">Navidad</a></li>
+                                <li><a href="categorias.html#eventos" target="_blank">Eventos</a></li>
+                            </ul></li>
+                        <li><a href="articulo.html#articulo">Articulo estrella</a></li>
+                        <li><a href="contacto.html">Contacta</a></li>
+                    </ul>
+                </div>
+            </section>
+            <section class="contacto_sidebar">
+
+                <form class="formulario-lateral" action="https://jkorpela.fi/cgi-bin/echo.cgi" method="post">
+                    <fieldset class="lateral">
+                        <legend>Contacta con nosotros</legend>
+                        <div>
+                            <label class="contacto-lateral nombre-lateral" for="nombre">Nombre: </label>
+                            <input type="text" name="nombre" required>
+                        </div>
+
+                        <div>
+                            <label class="contacto-lateral email-lateral" for="email">Correo Electrónico: </label>
+                            <input type="email" name="email" required>
+                        </div>
+
+                        <div>
+                            <label class="contacto-lateral text-lateral" for="mensaje">Mensaje: </label>
+                            <textarea name="mensaje" cols="20" rows="2" required></textarea>
+                        </div>
+
+                        <button class="contacto-lateral boton-lateral" type="submit"> Enviar </button>
+                    </fieldset>
+                </form>
+            </section>
+        </aside>
+        <main id="main"> <!-- &  ----------   MAIN ARTICULO ------------->
+            <section id="articulo">
+                <article>
+                    <div>
+                        <h3>Este es nuestro plato estella</h3>
+                        <p>
+                            En cada tarta personalizada, creamos momentos que van más allá de lo delicioso.
+                            Diseñadas con esmero y cuidado, nuestras tartas son una celebración para todos,
+                            considerando cada alergia e intolerancia alimentaria. Desde celiacos hasta
+                            intolerantes
+                            a la lactosa, cada porción es una invitación a disfrutar juntos sin preocupaciones.
+                            Descubre el placer de unir a todos en la mesa con nuestras tartas especiales,
+                            donde la inclusión se sirve con cada rebanada.
+                        </p>
+                    </div>
+                    <div>
+                        <h3>Nuestra tarta más vendida</h3>
+                        <p> <strong>Tentación de Chocolate Supreme</strong> es un deleite para los amantes del
+                            chocolate.
+                            Su suave bizcocho se combina con capas decadentes de crema de chocolate blanco y negro,
+                            creando una explosión de sabores en cada bocado. La inclusión de trozos de chocolate belga
+                            y fudge de cacao añade una textura rica y una profundidad deliciosa al conjunto.
+                        </p>
+                    </div>
+                    <div>
+                        <h2>Tentación de Chocolate Supreme</h2>
+                        <p>
+                            Deleita tus sentidos con la exquisita armonía de sabores en Tentación de Chocolate Supreme:
+                            la culminación del placer chocolateado.
+                        </p>
+                    </div>
+                </article>
+                <div class="completo">
+                    <img src="img/tartaArticulo/2.jpg" alt="deliciosa tarta de chocolate con fresas por encima">
+                </div>
+            </section>
+            <section id="articulo-2">
+                <article class="bloque">
+                    <div class="externo">
+                        <div class="interno">
+                            <h4>Ingredientes principales:</h4>
+                            <ul>
+                                <li>Bizcocho de chocolate oscuro y esponjoso.</li>
+                                <li>Relleno de crema de chocolate blanco y negro.</li>
+                                <li>Capas de fudge de cacao y trozos de chocolate belga.</li>
+                            </ul>
+                            <h5>Opcional para decoración:</h5>
+                            <ul>
+                                <li>Fresas y frutos rojos</li>
+                                <li>Confeti chocolate</li>
+                                <li>Perlas comestibles (azucar esmeralado)</li>
+                            </ul>
+                            <br>
+                            <h4>Alérgenos</h4>
+                            <ul>
+                                <li>Gluten <img src="img/iconos/trigo.png" alt="icnono de que contiene gluten"></li>
+                                <li>Lactosa <img src="img/iconos/leche.png" alt="icono de que contiene leche"></li>
+                                <li>Azucar <img src="img/iconos/cubo-de-azucar.png" alt="icono de que contiene azucar"></li>
+                                <li>Trazas de frutos secos <img src="img/iconos/mani (2).png"alt="icono de que contiene frutos secos" width="20px"></li>
+                            </ul>
+                            <br>
+                            <h4>Sustitutos</h4>
+                            <ul>
+                                <li>Harinas libres de gluten, como harina de almendras <img
+                                        src="img/iconos/sin-gluten.png" alt="icono libre de gluten">
+                                </li>
+                                <li>Derivados lacteos sin lactosa, com la leche sin lactosa <img
+                                        src="img/iconos/sin-lactosa.png" alt="icono sin lactosa">
+                                </li>
+                                <li>Sustitutos edulcorantes como estevia o sacarina <img
+                                        src="img/iconos/sin-azucar (1).png" alt="icono sin azúcar">
+                                </li>
+                                <li>ingrecientes con certificacion libre de frutos secos <img
+                                        src="img/iconos/sin-nueces.png" alt="icono sin frutos secos">
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="interno">
+                            <img src="img/tartaArticulo/4.jpg" alt="deliciosa tarta de chocolate con fresas por encima">
+                        </div>
+                    </div>
+                </article>
+            </section>
+            <section id="articulo-3">
+                <article class="bloque">
+                    <div class="externo">
+                        <div class="interno">
+                            <img src="img/tartaArticulo/9.jpg" alt="imagen tarta de chocolate sin un trozo">
+                        </div>
+                        <div class="interno">
+                            <p>Su tamaño <em>estandar</em> es de 24 cm de diámetro, con un precio para ese tamaño de
+                                <s>64.95€</s> <strong>45.99€</strong> <small><strong>Black Friday</strong></small>
+                            </p>
+                            <p>De este tamaños se pueden sacar 12 porciones <em>muy generosas</em>, y hasta 24
+                                porciones normales</p>
+                        </div>
+                    </div>
+                </article>
+            </section>
+            <section id="articulo-4">
+                <article>
+                    <div>
+                        <dl> <!--& list definitions, la emplearé para las situaciones en las que se pueda hacer un encargo de esta tarta-->
+                            <dt>Celebraciones de cumpleaños</dt><!-- & Title definition-->
+                            <dd><small>Personalización para eventos específicos, como decoración de confeti para
+                                    cumpleaños o motivos corporativos.</small></dd>
+                            <!--& description definition-->
+                            <hr>
+                            <dt>Aniversarios Especiales</dt>
+                            <dd><small>Cubierta con fondant y decoración en tonos dorados o plateados.</small>
+                            </dd>
+                            <hr>
+                            <dt>Eventos Corporativos</dt>
+                            <dd><small>Cubierta de ganache de chocolate y decoración con virutas de
+                                    chocolate.</small></dd>
+                            <hr>
+                            <dt>Celebraciones de Logros</dt>
+                            <dd><small>Decorada con frutas frescas como frambuesas y arándanos.</small></dd>
+                        </dl>
+                    </div>
+                </article>
+            </section>
+            <section id="reseñas">
+                <article>
+                    <div class="todas-las-reseñas">
+                        <div class="reseña">
+                            <div class="titular">
+                                <h5> Reseña de Clara S.</h5>
+                                <div class="star">
+                                    <img src="img/iconos/star-solid.svg" alt="estrella">
+                                    <img src="img/iconos/star-solid.svg" alt="estrella">
+                                    <img src="img/iconos/star-solid.svg" alt="estrella">
+                                    <img src="img/iconos/star-solid.svg" alt="estrella">
+                                    <img src="img/iconos/star-solid.svg" alt="estrella">
+                                </div>
+                            </div>
+                            <h5><em>Celebración de cumpleaños especial</em></h5>
+                            <p>
+                                ¡La Tentación de Chocolate Supreme fue la estrella de mi fiesta de
+                                cumpleaños!
+                                Todos quedaron impresionados con la deliciosa combinación de sabores.
+                                ¡Una elección acertada para celebrar momentos especiales!
+                            </p>
+                        </div>
+                        <hr>
+                        <div class="reseña">
+                            <div class="titular">
+                                <h5> Reseña de Martín R.</h5>
+                                <div class="star">
+                                    <img src="img/iconos/star-solid.svg" alt="estrella">
+                                    <img src="img/iconos/star-solid.svg" alt="estrella">
+                                    <img src="img/iconos/star-solid.svg" alt="estrella">
+                                    <img src="img/iconos/star-solid.svg" alt="estrella">
+                                    <img src="img/iconos/star-solid.svg" alt="estrella">
+                                </div>
+                            </div>
+                            <h5><em>Aniversario romántico</em></h5>
+                            <p>
+                                La elegancia y sabor de esta tarta hicieron que nuestro aniversario
+                                fuera inolvidable.
+                                ¡El chocolate derretía nuestros corazones! Una delicia que merece cinco
+                                estrellas.
+                            </p>
+                        </div>
+                        <hr>
+                        <div class="reseña">
+                            <div class="titular">
+                                <h5> Reseña de Andrea C.</h5>
+                                <div class="star">
+                                    <img src="img/iconos/star-solid.svg" alt="estrella">
+                                    <img src="img/iconos/star-solid.svg" alt="estrella">
+                                    <img src="img/iconos/star-solid.svg" alt="estrella">
+                                    <img src="img/iconos/star-solid.svg" alt="estrella">
+                                    <img src="img/iconos/star-solid.svg" alt="estrella">
+                                </div>
+                            </div>
+                            <h5><em>Evento Corporativo Exitoso</em></h5>
+                            <p>
+                                La Tentación de Chocolate Supreme fue un éxito en nuestro evento
+                                corporativo.
+                                Un toque de lujo que impresionó a clientes y colegas.
+                                Definitivamente,
+                                una opción de cinco estrellas.
+                            </p>
+                        </div>
+                        <hr>
+                        <div class="reseña">
+                            <div class="titular">
+                                <h5> Reseña de Javier M.</h5>
+                                <div class="star">
+                                    <img src="img/iconos/star-solid.svg" alt="estrella">
+                                    <img src="img/iconos/star-solid.svg" alt="estrella">
+                                    <img src="img/iconos/star-solid.svg" alt="estrella">
+                                    <img src="img/iconos/star-solid.svg" alt="estrella">
+                                    <img src="img/iconos/star-solid.svg" alt="estrella">
+                                </div>
+                            </div>
+                            <h5><em>Sorpresa en mi graduación</em></h5>
+                            <p>
+                                Encargué esta tarta para celebrar mi promoción y fue la sorpresa
+                                perfecta. El sabor y presentación impecables. Sin duda repetiré en otra ocasión.
+                                <img src="imagenes/iconos/me-gusta.png" alt="icono corazon" width="20px">
+                            </p>
+                        </div>
+                    </div>
+                </article>
+            </section>
+
+            <section id="articulo-5">
+                <article>
+                    <div>
+                        <p>
+                            ¡Descubre un mundo de indulgencia chocolateada con nuestra tentadora tarta de chocolate Supreme! 
+                            Cada bocado es una experiencia sensorial única que te transportará a un paraíso de sabores intensos
+                            y texturas exquisitas. ¡Haz de tu próxima celebración un momento inolvidable con el placer celestial de nuestra tarta!
+                        </p>
+                        <h4>Pídela ahora y deja que el chocolate hable por sí mismo</h4>
+                        <!-- <button><a href="contacto.html">Pide aqui</a></button>  -->
+                        <button onclick="display_random_image();">Pide aqui</button>
+                    </div>
+                </article>
+            </section>
+        </main> <!-- &  ----------   FIN  MAIN ARTICULO ------------->
+        <footer id="footer">
+            <div class="footer">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="categorias.html">Servicios</a></li>
+                    <li><a href="contacto.html">Contacta</a></li>
+                </ul>
+            </div>
+            <div class="info">
+                <p name="email">
+                <address><a href="contacto.html">info@menumaravilla.com</a>
+                </address>
+                </p> <!--^ADDRESS para indicar información de contacto-->
+
+                <p name="tlf">
+                <address> Tlf: 666 878 953</address>
+                </p>
+                <p><small>Especialistas en alergias e intolerancias</small></p>
+            </div>
+            <div class="autor">
+                <small>© 2024 Desarrollado por ZairaMartin. Todos los derechos de autor reservados.</small>
+            </div>
+        </footer>
+    </div>
+    <script>
+        
+    </script>
+</body>
+
+</html>

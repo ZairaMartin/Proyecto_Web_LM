@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Servicios</title>
+</head>
+
+<body>
+    <div class="container">
+        <header id="header">
+            <div class="arriba">
+                <div class="logo">
+                    <a href="index.html"><h1>Menú Maravilla</h1></a>
+                </div>
+                <div id="buscador">
+                    <input type="text" placeholder="Buscar..." name="buscador">
+                    <button class="lupa" type="submit" name="buscador"><img src="img/iconos/lupa.svg"
+                            alt="Lupa del buscador"></button>
+
+                </div>
+            </div>
+            <div class="navbar">
+                <nav id="navbar">
+                    <ul class="menu-fijo">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="categorias.html">Servicios</a>
+                            <ul class="menu-desplegable">
+                                <li><a href="categorias.html#boda">Bodas</a></li>
+                                <li><a href="categorias.html#bautizo">Bautizos</a></li>
+                                <li><a href="categorias.html#comuniones">Comuniones</a></li>
+                                <li><a href="categorias.html#cumpleaños">Cumpleaños</a></li>
+                                <li><a href="categorias.html#navidad">Navidad</a></li>
+                                <li><a href="categorias.html#eventos">Eventos</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="contacto.html">Contacta</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <aside id="sidebar">
+            <section class="indice-lateral">
+                <div class="ind-lat">
+                    <ul>
+                        <li><a href="index.html#welcome">Bienvenida</a></li>
+                        <li><a href="index.html#cuadricula">Catálogo de nuestros servicios</a></li>
+                        <li><a href="index.html#resumen">Nuestro trabajo</a>
+                            <ul>
+                                <li><a href="categorias.html#boda" target="_blank">Bodas</a></li>
+                                <li><a href="categorias.html#bautizo" target="_blank"> Bautizos</a></li>
+                                <li><a href="categorias.html#comuniones" target="_blank">Comuniones</a></li>
+                                <li><a href="categorias.html#cumpleaños" target="_blank">Cumpleaños</a></li>
+                                <li><a href="categorias.html#navidad" target="_blank">Navidad</a></li>
+                                <li><a href="categorias.html#eventos" target="_blank">Eventos</a></li>
+                            </ul></li>
+                        <li><a href="articulo.html#articulo">Articulo estrella</a></li>
+                        <li><a href="contacto.html">Contacta</a></li>
+                    </ul>
+                </div>
+            </section>
+            <section class="contacto_sidebar">
+
+                <form class="formulario-lateral" action="https://jkorpela.fi/cgi-bin/echo.cgi" method="post">
+                    <fieldset class="lateral">
+                        <legend>Contacta con nosotros</legend>
+                        <div>
+                            <label class="contacto-lateral nombre-lateral" for="nombre">Nombre: </label>
+                            <input type="text" name="nombre"  required>
+                        </div>
+
+                        <div>
+                            <label class="contacto-lateral email-lateral" for="email">Correo Electrónico: </label>
+                            <input type="email" name="email" required>
+                        </div>
+
+                        <div>
+                            <label class="contacto-lateral text-lateral" for="mensaje">Mensaje: </label>
+                            <textarea name="mensaje" cols="20" rows="2" required></textarea>
+                        </div>
+
+                        <button class="contacto-lateral boton-lateral" type="submit"> Enviar </button>
+                    </fieldset>
+                </form>
+            </section>
+        </aside>
+        <main id="main"> <!-- &  ----------   MAIN CATEGORIAS ------------->
+            <section id="entrada">
+                <div>
+                    <p>Explora un festín culinario sin límites, donde cada plato es una obra
+                        maestra de
+                        sabor, cuidadosamente diseñado
+                        para deleitar a todos, eliminando las preocupaciones de alergias e
+                        intolerancias.
+                        Descubre un mundo de posibilidades gastronómicas, donde la inclusión es
+                        la clave de
+                        un banquete inolvidable.
+                    </p>
+                </div>
+            </section>
+            <section id="boda">
+                <article class="bloque">
+                    <div class="externo">
+                        <div class="interno">
+                            <img src="img/menus/menu 1.jpg" alt="imagen del primer menu">
+                        </div>
+                        <div class="interno">
+                            <h3>Menu de Bodas</h3>
+                            <ul>
+                                <li>Entrante:
+                                    <ol>
+                                        <li>Tartar de Salmón con Aguacate</li>
+                                        <li>Caprese en Brochetas</li>
+                                    </ol>
+                                </li>
+                                <li>Plato principal:
+                                    <ol>
+                                        <li>Solomillo de Ternera con Salsa de Vino Tinto</li>
+                                        <li>Salmón al Horno con Costra de Hierbas</li>
+                                    </ol>
+                                </li>
+                                <li>Guarniciones:
+                                    <ol>
+                                        <li>Risotto de Champiñones</li>
+                                        <li>Vegetales de Temporada al Vapor</li>
+                                    </ol>
+                                </li>
+                                <li>Postres:
+                                    <ol>
+                                        <li>Tarta Nupcial</li>
+                                        <li>Tiramisú de Frutos Rojos</li>
+                                    </ol>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+            </section>
+            <section id="bautizo">
+                <article class="bloque">
+                    <div class="externo">
+                        <div class="interno">
+                            <img src="img/menus/Menu 2.jpg" alt="imagen del segundo menu">
+                        </div>
+                        <div class="interno">
+                            <h3>Menu de Bautizo</h3>
+                            <ul>
+                                <li>Entrante:
+                                    <ol>
+                                        <li>Tartar de Salmón con Aguacate</li>
+                                        <li>Caprese en Brochetas</li>
+                                    </ol>
+                                </li>
+                                <li>Plato principal:
+                                    <ol>
+                                        <li>Solomillo de Ternera con Salsa de Vino Tinto</li>
+                                        <li>Salmón al Horno con Costra de Hierbas</li>
+                                    </ol>
+                                </li>
+                                <li>Guarniciones:
+                                    <ol>
+                                        <li>Risotto de Champiñones</li>
+                                        <li>Vegetales de Temporada al Vapor</li>
+                                    </ol>
+                                </li>
+                                <li>Postres:
+                                    <ol>
+                                        <li>Tarta Nupcial</li>
+                                        <li>Tiramisú de Frutos Rojos</li>
+                                    </ol>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+            </section>
+            <section id="comuniones">
+                <article class="bloque">
+                    <div class="externo">
+                        <div class="interno">
+                            <img src="img/menus/Menu 3.jpg" alt="imagen del tercer menu">
+                        </div>
+                        <div class="interno">
+                            <h3>Menu de Comunion</h3>
+                            <ul>
+                                <li>Entrante:
+                                    <ol>
+                                        <li>Ensalada Caprese en Tostadas</li>
+                                        <li>Rollitos de Primavera con Verduras</li>
+                                    </ol>
+                                </li>
+                                <li>Plato principal:
+                                    <ol>
+                                        <li>Merluza al Horno con Salsa de Limón</li>
+                                        <li>Lasaña Vegetariana</li>
+                                    </ol>
+                                </li>
+                                <li>Guarniciones:
+                                    <ol>
+                                        <li>Ensalada de Quinoa con Verduras</li>
+                                        <li>Bastones de Zanahoria y Calabacín Asados</li>
+                                    </ol>
+                                </li>
+                                <li>Postres:
+                                    <ol>
+                                        <li>Tarta de Comunión Decorada</li>
+                                        <li>Brochetas de Frutas con Chocolate</li>
+                                    </ol>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+            </section>
+            <section id="cumpleaños">
+                <article class="bloque">
+                    <div class="externo">
+                        <div class="interno">
+                            <img src="img/menus/Menu 4.jpg" alt="imagen del cuarto menu">
+                        </div>
+                        <div class="interno">
+                            <h2>Menu de Cumpleaños</h2>
+                            <ul>
+                                <li>Entrante:
+                                    <ol>
+                                        <li>Dip de Espinacas y Queso Feta</li>
+                                        <li>Mini Empanadas Variadas</li>
+                                    </ol>
+                                </li>
+                                <li>Plato principal:
+                                    <ol>
+                                        <li>Tacos de Carnitas con Salsa de Aguacate</li>
+                                        <li>Pizza Casera con Variedad de Toppings</li>
+                                    </ol>
+                                </li>
+                                <li>Guarniciones:
+                                    <ol>
+                                        <li>Ensalada de Papas con Huevo y Mostaza</li>
+                                        <li>Palitos de Zanahoria y Apio con Hummus</li>
+                                    </ol>
+                                </li>
+                                <li>Postres:
+                                    <ol>
+                                        <li>Tarta de Cumpleaños</li>
+                                        <li>Helado con Toppings Variados</li>
+                                    </ol>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+            </section>
+            <section id="navidad">
+                <article class="bloque">
+                    <div class="externo">
+                        <div class="interno">
+                            <img src="img/menus/Menu 5.jpg" alt="imagen del quinto menu">
+                        </div>
+                        <div class="interno">
+                            <h2>Menu de Navidad</h2>
+                            <ul>
+                                <li>Entrante:
+                                    <ol>
+                                        <li>Sopa de Calabaza y Jengibre</li>
+                                        <li>Blinis con Salmón Ahumado y Crema Agria</li>
+                                    </ol>
+                                </li>
+                                <li>Plato principal:
+                                    <ol>
+                                        <li>Pavo Asado con Relleno de Castañas</li>
+                                        <li>Bacalao a la Vizcaína</li>
+                                    </ol>
+                                </li>
+                                <li>Guarniciones:
+                                    <ol>
+                                        <li>Puré de Patatas con Mantequilla y Romero</li>
+                                        <li>Ensalada de Hojas Verdes con Granada y Nueces</li>
+                                    </ol>
+                                </li>
+                                <li>Postres:
+                                    <ol>
+                                        <li>Tronco de Navidad (Bûche de Noël)</li>
+                                        <li>Tarta de Navidad</li>
+                                        <li>Polvorones y Turrones</li>
+                                    </ol>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+            </section>
+            <section id="eventos">
+                <article class="bloque">
+                    <div class="externo">
+                        <div class="interno">
+                            <img src="img/menus/Menu 6.jpg" alt="imagen del sexto menu">
+                        </div>
+                        <div class="interno">
+                            <h2>Menu de Eventos</h2>
+                            <ul>
+                                <li>Entrante:
+                                    <ol>
+                                        <li>Tacos de Pato con Salsa de Mango y Chipotle</li>
+                                        <li>Rollitos de Primavera de Camarones y Guacamole</li>
+                                    </ol>
+                                </li>
+                                <li>Plato principal:
+                                    <ol>
+                                        <li>Ramen con Curry y Leche de Coco</li>
+                                        <li>Lomo de Cerdo a la Barbacoa Coreana</li>
+                                    </ol>
+                                </li>
+                                <li>Guarniciones:
+                                    <ol>
+                                        <li>Ensalada de Edamame con Vinagreta de Sésamo</li>
+                                        <li>Arroz Jazmín con Almendras y Cilantro</li>
+                                    </ol>
+                                </li>
+                                <li>Postres:
+                                    <ol>
+                                        <li>Tiramisú de Té Matcha</li>
+                                        <li>Helado de Té Chai con Galletas de Jengibre</li>
+                                        <li>Tarta personalizada para la ocasión</li>
+                                    </ol>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+            </section>
+            <section id="tarta">
+                <article class="bloque">
+                    <div class="externo">
+                        <div class="interno">
+                            <img src="img/menus/tartas.jpg" alt="imagen del sexto menu">
+                        </div>
+                        <div class="interno">
+                            <h3>Alucina con nuestras tartas</h3>
+                            <p>
+                                Descubre un mundo de exquisitez en cada capa y sabor. Nuestras tartas no solo
+                                son postres, son obras maestras que cuentan historias dulces. Adéntrate en la tentación
+                                y déjate llevar por un festín visual y gustativo que despertará todos tus sentidos.
+                            </p>
+                            <div>
+                                <button type="button" ><a href="articulo.html"> Nuestro artículo estrella </a></button>
+                            </div>
+                            <h4>Pídela ahora y deja que el chocolate hable por sí mismo</h4>
+                            <button><a href="contacto.html"> Pide aqui </a></button>
+                        </div>
+                    </div>
+                </article>
+            </section>
+        </main> <!-- &  ----------   FIN  MAIN CATEGORIAS ------------->
+        <footer id="footer">
+            <div class="footer">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="categorias.html">Servicios</a></li>
+                    <li><a href="contacto.html">Contacta</a></li>
+                </ul>
+            </div>
+            <div class="info">
+                <p name="email">
+                <address><a href="contacto.html">info@menumaravilla.com</a>
+                </address>
+                </p> <!--^ADDRESS para indicar información de contacto-->
+
+                <p name="tlf">
+                <address> Tlf: 666 878 953</address>
+                </p>
+                <p><small>Especialistas en alergias e intolerancias</small></p>
+            </div>
+            <div class="autor">
+                <small>© 2024 Desarrollado por ZairaMartin. Todos los derechos de autor reservados.</small>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

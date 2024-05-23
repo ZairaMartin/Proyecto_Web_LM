@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Inicio</title>
+</head>
+
+<body>
+    <div class="container">
+        <header id="header">
+            <div class="arriba">
+                <div class="logo">
+                    <a href="index.html"><h1>Menú Maravilla</h1></a>
+                </div>
+                <div id="buscador">
+                    <input type="text" placeholder="Buscar..." name="buscador">
+                    <button class="lupa"  type="submit" name="buscador"><img src="img/iconos/lupa.svg" alt="Lupa del buscador"></button>
+                    
+                </div>
+            </div>
+            <div class="navbar">
+                <nav id="navbar">
+                    <ul class="menu-fijo">
+                        <li class="item-fijo"><a href="index.html">Inicio</a></li>
+                        <li class="item-fijo"><a href="categorias.html">Servicios</a>
+                            <ul class="menu-desplegable">
+                                <li><a href="categorias.html#boda">Bodas</a></li>
+                                <li><a href="categorias.html#bautizo">Bautizos</a></li>
+                                <li><a href="categorias.html#comuniones">Comuniones</a></li>
+                                <li><a href="categorias.html#cumpleaños">Cumpleaños</a></li>
+                                <li><a href="categorias.html#navidad">Navidad</a></li>
+                                <li><a href="categorias.html#eventos">Eventos</a></li>
+                            </ul>
+                        </li>
+                        <li class="item-fijo"><a href="contacto.html">Contacta</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <aside id="sidebar">
+            <section class="indice-lateral">
+                <div class="ind-lat">
+                    <ul>
+                        <li><a href="index.html#welcome">Bienvenida</a></li>
+                        <li><a href="index.html#cuadricula">Catálogo de nuestros servicios</a></li>
+                        <li><a href="index.html#resumen">Nuestro trabajo</a>
+                            <ul>
+                                <li><a href="categorias.html#boda" target="_blank">Bodas</a></li>
+                                <li><a href="categorias.html#bautizo" target="_blank"> Bautizos</a></li>
+                                <li><a href="categorias.html#comuniones" target="_blank">Comuniones</a></li>
+                                <li><a href="categorias.html#cumpleaños" target="_blank">Cumpleaños</a></li>
+                                <li><a href="categorias.html#navidad" target="_blank">Navidad</a></li>
+                                <li><a href="categorias.html#eventos" target="_blank">Eventos</a></li>
+                            </ul></li>
+                        <li><a href="articulo.html#articulo">Articulo estrella</a></li>
+                        <li><a href="contacto.html">Contacta</a></li>
+                    </ul>
+                </div>
+            </section>
+            <section class="contacto_sidebar">
+
+                <form class="formulario-lateral" action="https://jkorpela.fi/cgi-bin/echo.cgi" method="post">
+                    <fieldset class="lateral">
+                        <legend>Contacta con nosotros</legend>
+                        <div>
+                            <label class="contacto-lateral nombre-lateral" for="nombre">Nombre: </label>
+                            <input type="text" name="nombre"  required>
+                        </div>
+
+                        <div>
+                            <label class="contacto-lateral email-lateral" for="email">Correo Electrónico: </label>
+                            <input type="email" name="email"  required>
+                        </div>
+
+                        <div>
+                            <label class="contacto-lateral text-lateral" for="mensaje">Mensaje: </label>
+                            <textarea name="mensaje"  cols="20" rows="2" required></textarea>
+                        </div>
+
+                        <button class="contacto-lateral boton-lateral" type="submit"> Enviar </button>
+                    </fieldset>
+                </form>
+            </section>
+        </aside>
+
+        <main id="main">
+            <section id="welcome" class="section">
+                <article class="article_main art-1" id="art-1">
+                    <header class="header-article">
+                        <!-- & JavaScript pedir nombre-->
+                        <button class="comic-button" onclick="nombre()">-Pulsa-</button>
+                        <!-- & JavaScript Geolocalizacion -->
+                        <button class="comic-button" onclick="getLocation()">-Pulsa para Geolocalizacion-</button>
+                        <p id="parrafo_nombre"></p>
+                        <h2>Te damos la bienvenida a <span class="foco"><em>Menú Maravilla</em></span></h2>
+                    </header>
+                    <div class="chuck-chuck">
+                        <h2 class="chuck">Chistes de CHUCK NORRIS</h2>
+                        <div id="chiste">
+    
+                        </div>
+                        <button id="obtenerChiste" class="comic-button">Obtener un chiste</button>
+                    </div>
+                    <div class="texto">
+                        <p class="text-index">En <strong><em>Menú Maravilla</em></strong>, no solo preparamos tu
+                            banquete, creamos
+                            experiencias gastronómicas inolvidables. <br>
+                            Nuestra pasión radica en transformar momentos especiales en celebraciones
+                            memorables.
+                        </p>
+                        <h3 class="h3-index h3-index-primero">Salud y Felicidad en cada bocado</h3>
+                        <p class="text-index">
+                            Nos enorgullece ofrecer menús diseñados con cuidado y creatividad para adaptarse a
+                            una variedad de ocasiones,<br>
+                            desde bodas y bautizos hasta celebraciones íntimas y eventos corporativos. <br>
+                            Lo que nos distingue es nuestra dedicación a la salud y el bienestar de cada
+                            comensal.
+                        </p>
+                        <h3 class="h3-index h3-index-segundo">Alergias y preferencias son nuestra <em>prioridad</em>
+                        </h3>
+                        <p class="text-index">
+                            En <em>Menú Maravilla</em>, entendemos la importancia de las <ins> <dfn
+                                    title="Respuesta inmunológica a alimentos que desencadena síntomas diversos, desde leves hasta graves.">
+                                    alergias</dfn> e <dfn
+                                    title="Incapacidad para digerir ciertos alimentos, causando malestar abdominal y otros síntomas, pero sin involucrar el sistema inmunológico.">intolerancias</dfn></ins>.
+                            Nuestros chefs expertos elaboran <br>
+                            cada plato con precisión y atención, asegurándonos de que cada invitado disfrute de
+                            una experiencia culinaria sin preocupaciones.
+                        </p>
+                        <h3 class="h3-index h3-index-tercero">Cocina creativa, momentos inolvidables</h3>
+                        <p class="text-index">
+                            Explora nuestro catálogo de menús creativos, diseñados para cada temporada y evento
+                            especial. Desde exquisitos menús <br>
+                            <strong>navideños</strong> hasta deliciosas opciones para <strong>bodas</strong>,
+                            estamos aquí para hacer que tus momentos especiales sean inolvidables.
+                        </p>
+                    </div>
+                </article>
+                <div class="img-art-1">
+                    <img src="img/main.jpg" alt="imagen de postres frutales">
+                </div>
+            </section>
+            <section id="relleno" class="section">
+                <article class="article_main art-2" id="art-2">
+                    <div class="caja">
+                        <div class="texto">
+                            <p>
+                                &emsp; En cada plato que creamos, hay un toque de magia. Es el ingrediente secreto
+                                que convierte
+                                una simple comida en una experiencia para recordar. No solo cocinamos con
+                                ingredientes de alta calidad,
+                                sino que también tejemos historias de felicidad en cada receta.
+                            </p>
+                            <p>
+                                &emsp; Cada evento es una obra maestra, una sinfonía de sabores cuidadosamente
+                                seleccionados y presentados
+                                con elegancia. En nuestra cocina, la pasión se mezcla con la creatividad, dando como
+                                resultado
+                                momentos que deleitan tanto el paladar como el alma.
+                            </p>
+                            <!-- ^ &emsp; es para meter espacio, en este caso para la sangría -->
+                            <p>
+                                &emsp;En <em>Menú Maravilla</em>, transformamos eventos especiales en momentos
+                                inolvidables.
+                                Nuestra pasión por la gastronomía se refleja en cada plato, diseñado para deleitar
+                                tus sentidos
+                                y superar tus expectativas. Desde bodas mágicas hasta celebraciones íntimas, te
+                                invitamos
+                                a explorar nuestros menús exquisitos, adaptados a tus gustos y necesidades.
+                                ¡Haz de tu próximo evento algo extraordinario con <em>Menú Maravilla</em>!
+                            </p>
+                        </div>
+                        <button><a class="boton-relleno" href="categorias.html">Nuestros Servicios</a></button>
+                    </div>
+                </article>
+                <div class="img-art-2">
+                    <img src="img/main-2.jpg" alt="mini cruasanes y napolitanas">
+                </div>
+            </section>
+            <section id="cuadricula">
+                <div class="colocar">
+                    <div class="servicio"><a href="categorias.html#boda">
+                        <div class="img-cuadricula">
+                            <img src="img/eventos/boda.jpg" alt="banquetes de boda">
+                        </div>
+                        <h3>Bodas</h3>
+                    </a></div>
+                    <div class="servicio"><a href="categorias.html#bautizo">
+                        <div class="img-cuadricula">
+                            <img src="img/eventos/bautizos.jpg" alt="banquetes de bautizos">
+                        </div>
+                        <h3>Bautizos</h3>
+                    </a></div>
+                    <div class="servicio"><a href="categorias.html#comuniones">
+                        <div class="img-cuadricula">
+                            <img src="img/eventos/comunion.jpg" alt="banquetes de comuniones">
+                        </div>
+                        <h3>Comuniones</h3>
+                    </a></div>
+                    <div class="servicio"><a href="categorias.html#cumpleaños">
+                        <div class="img-cuadricula">
+                            <img src="img/eventos/cumple.jpg" alt="banquetes de cumpleaños">
+                        </div>
+                        <h3>Cumpleaños</h3>
+                    </a></div>
+                    <div class="servicio"><a href="categorias.html#navidad">
+                        <div class="img-cuadricula">
+                            <img src="img/eventos/navidad.jpg" alt="banquetes de Navidad">
+                        </div>
+                        <h3>Navidad</h3>
+                    </a></div>
+                    <div class="servicio"><a href="categorias.html#eventos">
+                        <div class="img-cuadricula">
+                            <img src="img/eventos/cenas y eventos.jpg" alt="banquetes de todo tipo de eventos">
+                        </div>
+                        <h3>Eventos</h3>
+                    </a></div>
+                </div>
+            </section>
+            <section id="resumen">
+                <article class="bloque">
+                    <div class="externo">
+                        <div class="interno">
+                            <img src="img/categorias menu/cena boda.jpg" alt="imagen del banquete de bodas">
+                        </div>
+                        <div class="interno x">
+                            <div class="big">
+                                <div class="small">
+                                    <h4>Bodas</h4>
+                                    <p>En el día más especial de tu vida, transformamos cada bocado en un recuerdo
+                                        inolvidable. Desde elegantes banquetes hasta detalles personalizados,
+                                        nuestro servicio de catering para bodas está diseñado para hacer de tu día un festín
+                                        de amor y exquisitez.
+                                    </p>
+                                </div>
+                                <div class="small">
+                                    <h4>Bautizos</h4>
+                                    <p>Para celebrar momentos llenos de alegría y bendiciones, nuestro catering para
+                                        bautizos es una sinfonía de sabores que se mezclan con la esencia
+                                        de la familia y la devoción. Cada plato es una celebración, cada detalle, un regalo
+                                        para el alma.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                
+                    <div class="externo">
+                        <div class="interno x">
+                            <div class="big">
+                                <div class="small">
+                                    <h4>Comuniones</h4>
+                                    <p>En este día de fe y celebración, nuestro catering para comuniones te lleva a un viaje
+                                        culinario donde la espiritualidad se encuentra con el placer.
+                                        Cada plato está lleno de sabor y significado, creando una experiencia única para
+                                        todos los comensales.
+                                    </p>
+                                </div>
+                                <div class="small">
+                                    <h4>Navidad</h4>
+                                    <p>Esta temporada navideña, deleita a tus seres queridos con un banquete festivo que
+                                        encienda el espíritu navideño. Nuestro
+                                        catering para Navidad trae la magia a la mesa, con platos que son regalos para el
+                                        paladar y la tradición.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="interno">
+                            <img src="img/categorias menu/cena comunion.jpg" alt="imagen del banquete de comunion">
+                        </div>
+                    </div>
+                    <div class="externo">
+                        <div class="interno">
+                            <img src="img/categorias menu/cena cumpleaños.jpg" alt="imagen del banquete de comunion">
+                        </div>
+                        <div class="interno x">
+                            <div class="big">
+                                <div class="small">
+                                    <h4>Cumpleaños</h4>
+                                    <p>Festeja el día más especial del año con un banquete que refleje tu estilo y
+                                        personalidad.
+                                        Nuestro catering para cumpleaños transforma cada mordisco en una celebración de
+                                        sabores, creando recuerdos que durarán toda la vida.
+                                    </p>
+                                </div>
+                                <div class="small">
+                                    <h4>Eventos</h4>
+                                    <p>Para cada ocasión especial, nuestro catering personalizado eleva la experiencia
+                                        culinaria. Desde eventos corporativos
+                                        hasta fiestas temáticas, cada detalle es cuidadosamente planificado, creando un
+                                        banquete que deja una impresión duradera.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </section>
+            <section id="final">
+                <article>
+                    <h4>
+                        Si quieres impresionar en tu celebracion, mira nuestra seccion de tartas y... ¡Alucina!
+                    </h4>
+                    <h5>Pídela ahora y deja que el chocolate hable por sí mismo</h5>
+                    <button class="comic-button"><a  href="articulo.html"><h3>Nuestra tarta estrella</h3></a></button>
+                    <button  class="comic-button"><a  href="contacto.html"><h3>Pide aqui</h3></a></button>
+                </article>
+            </section>
+<!-- && ------------------- -->
+            <section id="imagen_aleatoria">
+                <img id="imagen" src="img/menus/plato_vacio.jpg" alt="descripcion imagen">
+                <p id="descripcion">Plato vacio para los que quieren nada </p>
+                <button class="comic-button" onclick="random_image()">Click para generar menu aleatorio</button>
+            </section>
+        </main>
+
+        <footer id="footer">
+            <div class="footer">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="categorias.html">Servicios</a></li>
+                    <li><a href="contacto.html">Contacta</a></li>
+                </ul>
+            </div>
+            <div class="info">
+                <p name="email">
+                <address><a href="contacto.html">info@menumaravilla.com</a>
+                </address>
+                </p> <!--^ADDRESS para indicar información de contacto-->
+
+                <p name="tlf">
+                <address> Tlf: 666 878 953</address>
+                </p>
+                <p><small>Especialistas en alergias e intolerancias</small></p>
+            </div>
+            <div class="autor">
+                <small>© 2024 Desarrollado por ZairaMartin. Todos los derechos de autor reservados.</small>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/imagenes_random.js"></script>
+    <script src="js/pedirNombre.js"></script>
+    <script src="js/geolocalizacion.js"></script>
+    <script src="js/api.js"></script>
+</body>
+
+</html>
